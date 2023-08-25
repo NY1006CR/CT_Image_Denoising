@@ -27,7 +27,7 @@ img_noise_sim = compute_sim_images(img_noise, patch_size=args.patch_size, num_se
 
 从左到右分别为原始图像和通过算法根据不同K值构建的相似子图像（K=4、K=8、K=12）
 
-<img src="D:\工作\周报\sensview\8.3\origin.png" alt="origin" style="zoom: 67%;" /><img src="D:\工作\周报\sensview\8.3\k=4.jpg" alt="k=4" style="zoom: 33%;" /><img src="D:\工作\周报\sensview\8.3\k=8.jpg" alt="k=8" style="zoom: 33%;" /><img src="D:\工作\周报\sensview\8.3\k=16.jpg" alt="k=16" style="zoom:33%;" />
+![image-168](images/1692936769701.jpg)
 
 
 
@@ -37,19 +37,19 @@ img_noise_sim = compute_sim_images(img_noise, patch_size=args.patch_size, num_se
 
 我们首先用作者提供的[预模型](https://drive.google.com/drive/folders/1DKovoPvxq6IWjgo_hfx1NQ0wdqHwB3Gy)进行了测试，之后又在自己的噪声数据集上进行了训练
 
-![image-20230825100242885](C:\Users\Nieyu\AppData\Roaming\Typora\typora-user-images\image-20230825100242885.png)
+![image-20230825100242885](images/image-20230825100242885.png)
 
 - Fusion：不同的特征区域采用了不同的去噪参数
 
 
 
-![image-20230825100610856](C:\Users\Nieyu\AppData\Roaming\Typora\typora-user-images\image-20230825100610856.png)
+![image-20230825100610856](images/image-20230825100558811.png)
 
-![image-20230825100528322](C:\Users\Nieyu\AppData\Roaming\Typora\typora-user-images\image-20230825100528322.png)
+![image-20230825100528322](images/image-20230825100528322.png)
 
 我们也和其他的无监督算法做了几组对比效果图：
 
-![image-20230825101123271](C:\Users\Nieyu\AppData\Roaming\Typora\typora-user-images\image-20230825101123271.png)
+![image-20230825101123271](images/image-20230825101123271.png)
 
 ### 部署
 
@@ -144,7 +144,7 @@ cv::normalize(output_mat, output_rescaled, 0, 255, cv::NORM_MINMAX, CV_8U);
 cv::imwrite('output_path', output_rescaled);
 ```
 
-![image text](image-20230825103510785.png)
+![image text](images/image-20230825103510785.png)
 
 ### 记录一些坑
 
