@@ -1,4 +1,3 @@
-# CT_Image_Denoising
 github 记录noise2sim
 
 ### 介绍
@@ -145,7 +144,7 @@ cv::normalize(output_mat, output_rescaled, 0, 255, cv::NORM_MINMAX, CV_8U);
 cv::imwrite('output_path', output_rescaled);
 ```
 
-<img src="C:\Users\Nieyu\AppData\Roaming\Typora\typora-user-images\image-20230825103510785.png" alt="image-20230825103510785" style="zoom:50%;" />
+![image text](image-20230825103510785.png)
 
 ### 记录一些坑
 
